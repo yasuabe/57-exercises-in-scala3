@@ -4,4 +4,5 @@ My solutions of "Exercises for Programmers" in Scala 3
 ### Solutions
 
 - [x] 01: Saying Hello
-- [ ] 02: Counting the Number of Characters
+- [x] 02: Counting the Number of Characters
+- [ ] 03: Printing Quotes
