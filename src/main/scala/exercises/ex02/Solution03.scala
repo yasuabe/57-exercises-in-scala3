@@ -1,22 +1,26 @@
 package exercises.ex02
 
-import cats.FlatMap
+import cats.Monad
 import cats.syntax.flatMap._
+import cats.syntax.functor._
 import cats.syntax.applicative._
 import cats.syntax.option._
 import cats.effect.IO
 import cats.effect.IOApp
+import exercises.common.{ Std, given }
 
-// loop until non-empty input string
-object Solution03 extends IOApp.Simple :
-  import IO.{print, println, readLine}
-
-  def input(using fm: FlatMap[IO]): IO[String] = 
+def exec[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
+  val input = 
     val confirm = (line: String) => if (line.isEmpty)
-      then print("please enter non-empty string: ") as none
-      else line.some.pure[IO]
+      then e.print("please enter non-empty string: ") as none
+      else line.some.pure[F]
 
-    print("What is the input string? ") >> fm.untilDefinedM(readLine >>= confirm)
+    e.print("What is the input string? ") >> m.untilDefinedM(e.readLine >>= confirm)
 
-  def output(input: String): IO[Unit] = IO.println(s"$input has ${input.length} characters")
-  def run: IO[Unit] = input >>= output
+  val output = (input: String) => e.println(s"$input has ${input.length} characters")
+
+  input >>= output
+
+// loop waiting for non-empty input string
+object Solution03 extends IOApp.Simple :
+  def run: IO[Unit] = exec[IO]
