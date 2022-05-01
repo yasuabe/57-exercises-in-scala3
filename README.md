@@ -12,4 +12,5 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 06: [Retirement Calculator](src/main/scala/exercises/ex06/Solution01.scala) / [challenge](src/main/scala/exercises/ex06/Solution02.scala)
 #### Ch02: Calculations
 - [x] 07: [Area of a Rectangular Room](src/main/scala/exercises/ex07/Solution01.scala)
-- [ ] 08: Pizza Party
+- [x] 08: [Pizza Party](src/main/scala/exercises/ex08/Solution01.scala)
+- [ ] 09: PaintCalculator 
