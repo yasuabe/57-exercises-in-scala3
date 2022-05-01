@@ -9,6 +9,6 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 03: [Printing Quotes](src/main/scala/exercises/ex03/Solution01.scala)
 - [x] 04: [Mad Lib](src/main/scala/exercises/ex04/Solution01.scala)
 - [x] 05: [Simple Math](src/main/scala/exercises/ex05/Solution01.scala)
-- [x] 06: [Retirement Calculator](src/main/scala/exercises/ex06/Solution01.scala)
+- [x] 06: [Retirement Calculator](src/main/scala/exercises/ex06/Solution01.scala) / [challenge](src/main/scala/exercises/ex06/Solution02.scala)
 #### Ch02: Calculations
 - [ ] 07: Area of a Rectangular Room
