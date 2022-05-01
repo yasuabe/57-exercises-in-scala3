@@ -6,4 +6,5 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 01: Saying Hello
 - [x] 02: Counting the Number of Characters
 - [x] 03: Printing Quotes
-- [ ] 04: Mad Lib
+- [x] 04: Mad Lib
+- [ ] 05: Simple Math
