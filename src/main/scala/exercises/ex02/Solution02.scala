@@ -7,7 +7,7 @@ import cats.effect.IOApp
 import exercises.common.{ Std, given }
 
 // put error message when entered empty input string
-def exec[F[_]: FlatMap](using e: Std[F]): F[Unit] =
+def exec2[F[_]: FlatMap](using e: Std[F]): F[Unit] =
   val input = e.ask("What is the input string? ")
   val output = (input: String) => e.println(
     if (input.isEmpty)
@@ -17,4 +17,4 @@ def exec[F[_]: FlatMap](using e: Std[F]): F[Unit] =
   input >>= output
 
 object Solution02 extends IOApp.Simple :
-  def run: IO[Unit] = exec[IO]
+  def run: IO[Unit] = exec2[IO]

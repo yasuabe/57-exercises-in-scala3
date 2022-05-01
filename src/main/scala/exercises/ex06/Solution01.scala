@@ -19,7 +19,7 @@ def exec[F[_]](using e: Std[F], m: MonadError[F, Throwable]): F[Unit] =
   val currentYear = LocalDate.now.getYear.pure
 
   val buildOutput = (d: Int, y1: Int, y2: Int) =>
-    s"You have $d left until you can retire. It's $y1, so you can retire in $y2"
+    s"You have $d years left until you can retire.\nIt's $y1, so you can retire in $y2"
 
   val result = for {
     ca <- askCurrentAge    >>= convert

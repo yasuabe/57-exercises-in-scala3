@@ -9,7 +9,7 @@ import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
 
-def exec[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
+def exec3[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
   val input = 
     val confirm = (line: String) => if (line.isEmpty)
       then e.print("please enter non-empty string: ") as none
@@ -23,4 +23,4 @@ def exec[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
 
 // loop waiting for non-empty input string
 object Solution03 extends IOApp.Simple :
-  def run: IO[Unit] = exec[IO]
+  def run: IO[Unit] = exec3[IO]
