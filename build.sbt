@@ -12,5 +12,6 @@ lazy val root = project
       "org.typelevel" %% "cats-core" % "2.6.1",
       "org.typelevel" %% "cats-effect" % "3.3.11",
       "org.scalameta" %% "munit" % "0.7.29" % Test 
-    )
+    ),
+    scalacOptions ++= Seq("-source", "future")
   )

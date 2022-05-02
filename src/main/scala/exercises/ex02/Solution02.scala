@@ -1,7 +1,7 @@
 package exercises.ex02
 
 import cats.FlatMap
-import cats.syntax.flatMap._
+import cats.syntax.flatMap.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }

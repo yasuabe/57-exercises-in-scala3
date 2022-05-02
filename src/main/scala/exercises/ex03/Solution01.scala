@@ -1,8 +1,8 @@
 package exercises.ex03
 
 import cats.FlatMap
-import cats.syntax.flatMap._
-import cats.syntax.functor._
+import cats.syntax.flatMap.*
+import cats.syntax.functor.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }

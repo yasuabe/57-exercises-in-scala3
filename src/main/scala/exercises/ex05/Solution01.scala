@@ -1,13 +1,13 @@
 package exercises.ex05
 
 import cats.MonadError
-import cats.syntax.flatMap._
-import cats.syntax.functor._
-import cats.syntax.monadError._
+import cats.syntax.flatMap.*
+import cats.syntax.functor.*
+import cats.syntax.monadError.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
-import scala.util.chaining._
+import scala.util.chaining.*
 
 // exercise 05: Simple Math
 trait Solution01[F[_]]:

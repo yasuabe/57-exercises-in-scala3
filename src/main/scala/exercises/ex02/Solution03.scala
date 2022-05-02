@@ -1,10 +1,10 @@
 package exercises.ex02
 
 import cats.Monad
-import cats.syntax.flatMap._
-import cats.syntax.functor._
-import cats.syntax.applicative._
-import cats.syntax.option._
+import cats.syntax.flatMap.*
+import cats.syntax.functor.*
+import cats.syntax.applicative.*
+import cats.syntax.option.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }

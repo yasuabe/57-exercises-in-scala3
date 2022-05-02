@@ -1,7 +1,7 @@
 package exercises.common
 
 import cats.FlatMap
-import cats.syntax.flatMap._
+import cats.syntax.flatMap.*
 import cats.effect.IO
 
 trait Std[F[_]: FlatMap]:

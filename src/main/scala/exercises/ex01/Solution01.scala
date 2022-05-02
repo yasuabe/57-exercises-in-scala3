@@ -1,7 +1,7 @@
 package exercises.ex01
 
-import cats.syntax.flatMap._
-import cats.syntax.applicative._
+import cats.syntax.flatMap.*
+import cats.syntax.applicative.*
 import cats.Monad
 import cats.effect.IO
 import cats.effect.IOApp

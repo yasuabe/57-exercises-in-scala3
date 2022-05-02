@@ -1,12 +1,12 @@
 package exercises.ex07
 
 import cats.MonadError
-import cats.syntax.flatMap._
-import cats.syntax.functor._
+import cats.syntax.flatMap.*
+import cats.syntax.functor.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
-import scala.util.chaining._
+import scala.util.chaining.*
 
 // exercise 07: Area of a Rectangular Room
 trait Solution01[F[_]]:

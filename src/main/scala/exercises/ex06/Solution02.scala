@@ -3,14 +3,14 @@ package exercises.ex06
 import scala.util.Try
 import java.time.LocalDate
 import cats.MonadError
-import cats.syntax.flatMap._
-import cats.syntax.functor._
-import cats.syntax.applicative._
-import cats.syntax.apply._
+import cats.syntax.flatMap.*
+import cats.syntax.functor.*
+import cats.syntax.applicative.*
+import cats.syntax.apply.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
-import scala.util.chaining._
+import scala.util.chaining.*
 
 // exercise 06: Retirement Calculator: Challenge 1
 trait Solution02[F[_]]:
