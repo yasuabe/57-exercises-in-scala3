@@ -1,22 +1,21 @@
 package exercises.ex07
 
-import scala.util.Try
 import cats.MonadError
 import cats.syntax.flatMap._
 import cats.syntax.functor._
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
+import scala.util.chaining._
 
-object Solution01 extends IOApp.Simple :
+// exercise 07: Area of a Rectangular Room
+trait Solution01[F[_]]:
   val Ratio = 0.09290304
+  def exec(using s: Std[F], m: MonadError[F, Throwable]): F[Unit] =
+    val convert = (s: String) => m.catchNonFatal(s.toInt)
+    val ask     = (o: String) => s.ask(o) >>= convert
 
-  def exec[F[_]](using s: Std[F], m: MonadError[F, Throwable]): F[Unit] =
-    val askLength = s.ask("What is the length of the room in feet? ")
-    val askWidth  = s.ask("What is the width of the room in feet? ")
-    val convert   = (s: String) => m.fromTry(Try(s.toInt))
-
-    val buildOutput = (l: Int, w: Int) =>
+    val build = (l: Int, w: Int) =>
       val af = l * w
       val am = af * Ratio
       f"""You entered dimensions of $l feet by $w feet.
@@ -24,11 +23,11 @@ object Solution01 extends IOApp.Simple :
          |$af square feet
          |$am%.3f square meters""".stripMargin
 
-    val result = for {
-      l <- askLength >>= convert
-      w <- askWidth  >>= convert
-    } yield buildOutput(l, w)
+    for {
+      l <- ask("What is the length of the room in feet? ")
+      w <- ask("What is the width of the room in feet? ")
+      _ <- build(l, w) pipe s.println
+    } yield ()
 
-    result >>= s.println
-
-  def run: IO[Unit] = exec[IO]
+object Solution01 extends IOApp.Simple, Solution01[IO]:
+  def run: IO[Unit] = exec

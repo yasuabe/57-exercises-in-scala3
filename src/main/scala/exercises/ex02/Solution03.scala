@@ -9,18 +9,20 @@ import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
 
-def exec3[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
-  val input = 
-    val confirm = (line: String) => if (line.isEmpty)
-      then e.print("please enter non-empty string: ") as none
-      else line.some.pure[F]
+// exercise 02: Counting the Number of Characters
+// challenge 2: loop waiting for non-empty input string
+trait Solution03[F[_]]:
+  def exec(using s: Std[F], m: Monad[F]): F[Unit] =
+    val input = 
+      val confirm = (line: String) => if (line.isEmpty)
+        then s.print("please enter non-empty string: ") as none
+        else line.some.pure[F]
 
-    e.print("What is the input string? ") >> m.untilDefinedM(e.readLine >>= confirm)
+      s.print("What is the input string? ") >> m.untilDefinedM(s.readLine >>= confirm)
 
-  val output = (input: String) => e.println(s"$input has ${input.length} characters")
+    val output = (input: String) => s.println(s"$input has ${input.length} characters")
 
-  input >>= output
+    input >>= output
 
-// loop waiting for non-empty input string
-object Solution03 extends IOApp.Simple :
-  def run: IO[Unit] = exec3[IO]
+object Solution03 extends IOApp.Simple, Solution03[IO]:
+  def run: IO[Unit] = exec

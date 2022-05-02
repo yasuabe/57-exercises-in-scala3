@@ -1,20 +1,23 @@
 package exercises.ex04
 
-import cats.Monad
+import cats.FlatMap
 import cats.syntax.flatMap._
-import cats.syntax.traverse._
+import cats.syntax.functor._
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
 
-def exec[F[_]](using e: Std[F], m: Monad[F]): F[Unit] =
-  List("noun", "verb", "adjective", "adverb")
-    .traverse(t => e.ask(s"Enter a $t: "))
-    .flatMap { (_: @unchecked) match {
-        case  n :: v :: adj :: adv :: Nil =>
-           e.println(s"Do you $v your $adj $n $adv? That's hilarious")
-      }
-    }
+// exercise 04: Mad Lib
+trait Solution01[F[_]: FlatMap]:
+  def exec(using s: Std[F]): F[Unit] =
+    val ask = (t: String) => s.ask(s"Enter a $t: ")
+    for {
+      n   <- ask("noun")
+      v   <- ask("verb")
+      adj <- ask("adjective")
+      adv <- ask("adverb")
+      _   <- s.println(s"Do you $v your $adj $n $adv? That's hilarious")
+    } yield ()
 
-object Solution01 extends IOApp.Simple :
-  def run: IO[Unit] = exec[IO]
+object Solution01 extends IOApp.Simple, Solution01[IO]:
+  def run: IO[Unit] = exec
