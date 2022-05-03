@@ -16,4 +16,5 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 09: [PaintCalculator](src/main/scala/exercises/ex09/Solution01.scala)
 - [x] 10: [Self-Checkout](src/main/scala/exercises/ex10/Solution01.scala)
 - [x] 11: [Currency Conversion](src/main/scala/exercises/ex11/Solution01.scala)
-- [ ] 12: ComputingSimpleInteres
+- [x] 12: [ComputingSimpleInteres](src/main/scala/exercises/ex12/Solution01.scala)
+- [ ] 13: Determining Compound Interest
