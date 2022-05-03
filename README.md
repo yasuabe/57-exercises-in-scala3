@@ -14,4 +14,5 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 07: [Area of a Rectangular Room](src/main/scala/exercises/ex07/Solution01.scala)
 - [x] 08: [Pizza Party](src/main/scala/exercises/ex08/Solution01.scala)
 - [x] 09: [PaintCalculator](src/main/scala/exercises/ex09/Solution01.scala)
-- [ ] 10: Self-Checkout
+- [x] 10: [Self-Checkout](src/main/scala/exercises/ex11/Solution01.scala)
+- [ ] 11: Currency Conversion
