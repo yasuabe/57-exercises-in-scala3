@@ -10,7 +10,6 @@ import cats.syntax.apply.*
 import cats.effect.IO
 import cats.effect.IOApp
 import exercises.common.{ Std, given }
-import scala.util.chaining.*
 
 // exercise 10: Self-Checkout
 trait Solution01[F[_]]:
@@ -44,11 +43,12 @@ object Solution01 extends IOApp.Simple, Solution01[IO] :
 
   opaque type Money = Double
 
-  private val doubleMonoid = summon[Monoid[Double]]
   object Money:
     def apply(d: Double): Money = d
-    given a: Monoid[Money] = doubleMonoid
-
+    given Monoid[Money] = {
+      import cats.implicits.*
+      summon[Monoid[Double]]
+    }
   extension (m: Money)
     def +(n: Money): Money  = m + n
     def *(n: Double): Money = m * n
