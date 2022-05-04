@@ -46,7 +46,7 @@ object Solution01 extends IOApp.Simple, Solution01[IO] :
   object Money:
     def apply(d: Double): Money = d
     given Monoid[Money] =
-      import cats.implicits.*
+      import cats.instances.double.*
       summon[Monoid[Double]]
 
   extension (m: Money)
