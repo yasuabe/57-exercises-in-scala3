@@ -20,7 +20,7 @@ My solutions of "Exercises for Programmers" in Scala 3
 - [x] 13: [Determining Compound Interest](src/main/scala/exercises/ex13/Solution01.scala)
 #### Ch 04: Making Decisions
 - [x] 14. [Tax Calculator](src/main/scala/exercises/ex14/Solution01.scala)
-- [ ] 15. [Password Validation](src/main/scala/exercises/ex15/Solution01.scala)
+- [x] 15. [Password Validation](src/main/scala/exercises/ex15/Solution01.scala)([test](src/test/scala/exercises/ex15/Solution01Test.scala)), ([challenge 1](src/main/scala/exercises/ex15/Solution02.scala))([test](src/test/scala/exercises/ex15/Solution02Test.scala))
 - [ ] 16. [Legal Driving Age](src/main/scala/exercises/ex16/Solution01.scala)
 - [ ] 17. [Blood Alcohol Calculator](src/main/scala/exercises/ex17/Solution01.scala)
 - [ ] 18. [Temperature Converter](src/main/scala/exercises/ex18/Solution01.scala)
