@@ -1,25 +1,25 @@
-## 57 challenges: solutions in Scala 3
-My solutions of "Exercises for Programmers" in Scala 3
+## 57 challenges: Solutions in Scala 3
+My Solutions of "Exercises for Programmers" in Scala 3
 
 ### Solutions
 
 #### Ch 02: Input, Processing, and Output
-- [x] 01: [Saying Hello](src/main/scala/exercises/ex01/Solution01.scala)
-- [x] 02: [Counting the Number of Characters](src/main/scala/exercises/ex02/Solution01.scala) / [challenge 1](src/main/scala/exercises/ex02/Solution02.scala) / [challenge 1'](src/main/scala/exercises/ex02/Solution03.scala)
-- [x] 03: [Printing Quotes](src/main/scala/exercises/ex03/Solution01.scala)
-- [x] 04: [Mad Lib](src/main/scala/exercises/ex04/Solution01.scala)
-- [x] 05: [Simple Math](src/main/scala/exercises/ex05/Solution01.scala)
-- [x] 06: [Retirement Calculator](src/main/scala/exercises/ex06/Solution01.scala) / [challenge](src/main/scala/exercises/ex06/Solution02.scala)
+- [x] 01: [Saying Hello](src/main/scala/exercises/ex01/Solution01.scala)([test](src/test/scala/exercises/ex01/Solution01Test.scala))
+- [x] 02: [Counting the Number of Characters](src/main/scala/exercises/ex02/Solution01.scala)([test](src/test/scala/exercises/ex02/Solution01Test.scala)) / [challenge 1](src/main/scala/exercises/ex02/Solution02.scala)([test](src/test/scala/exercises/ex02/Solution02Test.scala)) / [challenge 1'](src/main/scala/exercises/ex02/Solution03.scala)([test](src/test/scala/exercises/ex02/Solution03Test.scala))
+- [x] 03: [Printing Quotes](src/main/scala/exercises/ex03/Solution01.scala)([test](src/test/scala/exercises/ex03/Solution01Test.scala))
+- [x] 04: [Mad Lib](src/main/scala/exercises/ex04/Solution01.scala)([test](src/test/scala/exercises/ex04/Solution01Test.scala))
+- [x] 05: [Simple Math](src/main/scala/exercises/ex05/Solution01.scala)([test](src/test/scala/exercises/ex05/Solution01Test.scala))
+- [x] 06: [Retirement Calculator](src/main/scala/exercises/ex06/Solution01.scala)([test](src/test/scala/exercises/ex06/Solution01Test.scala)) / [challenge](src/main/scala/exercises/ex06/Solution02.scala)([test](src/test/scala/exercises/ex06/Solution02Test.scala))
 #### Ch 03: Calculations
-- [x] 07: [Area of a Rectangular Room](src/main/scala/exercises/ex07/Solution01.scala)
-- [x] 08: [Pizza Party](src/main/scala/exercises/ex08/Solution01.scala)
-- [x] 09: [PaintCalculator](src/main/scala/exercises/ex09/Solution01.scala)
-- [x] 10: [Self-Checkout](src/main/scala/exercises/ex10/Solution01.scala)
-- [x] 11: [Currency Conversion](src/main/scala/exercises/ex11/Solution01.scala)
-- [x] 12: [Computing SimpleInteres](src/main/scala/exercises/ex12/Solution01.scala)
-- [x] 13: [Determining Compound Interest](src/main/scala/exercises/ex13/Solution01.scala)
+- [x] 07: [Area of a Rectangular Room](src/main/scala/exercises/ex07/Solution01.scala)([test](src/test/scala/exercises/ex07/Solution01Test.scala))
+- [x] 08: [Pizza Party](src/main/scala/exercises/ex08/Solution01.scala)([test](src/test/scala/exercises/ex08/Solution01Test.scala))
+- [x] 09: [PaintCalculator](src/main/scala/exercises/ex09/Solution01.scala)([test](src/test/scala/exercises/ex09/Solution01Test.scala))
+- [x] 10: [Self-Checkout](src/main/scala/exercises/ex10/Solution01.scala)([test](src/test/scala/exercises/ex10/Solution01Test.scala))
+- [x] 11: [Currency Conversion](src/main/scala/exercises/ex11/Solution01.scala)([test](src/test/scala/exercises/ex11/Solution01Test.scala))
+- [x] 12: [Computing SimpleInteres](src/main/scala/exercises/ex12/Solution01.scala)([test](src/test/scala/exercises/ex12/Solution01Test.scala))
+- [x] 13: [Determining Compound Interest](src/main/scala/exercises/ex13/Solution01.scala)([test](src/test/scala/exercises/ex13/Solution01Test.scala))
 #### Ch 04: Making Decisions
-- [x] 14. [Tax Calculator](src/main/scala/exercises/ex14/Solution01.scala)
+- [x] 14. [Tax Calculator](src/main/scala/exercises/ex14/Solution01.scala)([test](src/test/scala/exercises/ex14/Solution01Test.scala))
 - [x] 15. [Password Validation](src/main/scala/exercises/ex15/Solution01.scala)([test](src/test/scala/exercises/ex15/Solution01Test.scala)), ([challenge 1](src/main/scala/exercises/ex15/Solution02.scala))([test](src/test/scala/exercises/ex15/Solution02Test.scala))
 - [ ] 16. [Legal Driving Age](src/main/scala/exercises/ex16/Solution01.scala)
 - [ ] 17. [Blood Alcohol Calculator](src/main/scala/exercises/ex17/Solution01.scala)
