@@ -7,20 +7,10 @@ import munit.FunSuite
 import exercises.common.Pair._
 import exercises.common.InOut._
 import exercises.common.{ Std, given }
+import exercises.common.StdState
+import StdState.{*, given }
 
 class Solution01Test extends FunSuite:
-  type ThrowableOr = [T] =>> Either[Throwable, T]
-  type StdState    = [T] =>> StateT[ThrowableOr, InOut, T]
-
-  given Std[StdState] with
-    import StateT.*
-    def print(s: String): StdState[Unit] = get.flatMap(io => set(io push s))
-    def readLine: StdState[String] = get[ThrowableOr, InOut] >>= {
-      _.pop.fold(throw AssertionError("no input")){
-        (line, newIo) => set[ThrowableOr, InOut](newIo).as(line)
-      }
-    }
-
   val sut = new Solution01[StdState]{}
 
   test("calculate tax for WI") {

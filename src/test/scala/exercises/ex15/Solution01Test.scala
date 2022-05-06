@@ -8,10 +8,9 @@ import exercises.common.Pair._
 import exercises.common.InOut._
 import exercises.common.{ Std, given }
 import exercises.common.StdState
+import StdState.{*, given }
 
 class Solution01Test extends FunSuite:
-  import StdState.{*, given }
-
   val sut = new Solution01[StdState]{}
 
   test("reject when given wrong password") {

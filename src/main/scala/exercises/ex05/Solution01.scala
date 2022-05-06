@@ -19,7 +19,7 @@ trait Solution01[F[_]]:
       ('/', _ / _))
 
     val convert   = (n: String) => m.catchNonFatal(n.toInt)
-    val askNumber = (m: String) => s.ask(s"What is the $s number? ") >>= convert
+    val askNumber = (m: String) => s.ask(s"What is the $m number? ") >>= convert
     val build = (f: Int, s: Int) =>
       operations.map((o, b) => s"$f $o $s = ${b(f, s)}").mkString("\n")
 

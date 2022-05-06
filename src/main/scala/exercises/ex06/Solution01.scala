@@ -15,6 +15,7 @@ trait Solution01[F[_]]:
   def exec(using s: Std[F], m: MonadError[F, Throwable]): F[Unit] =
     val convert     = (s: String) => m.catchNonFatal(s.toInt)
     val ask         = [T] => (o: T) => s.ask(o.toString) >>= convert
+    // TODO: use type class for current year
     val currentYear = LocalDate.now.getYear.pure
 
     val build = (d: Int, y1: Int, y2: Int) =>
