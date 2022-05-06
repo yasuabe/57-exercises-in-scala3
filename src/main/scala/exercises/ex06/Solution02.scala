@@ -9,15 +9,18 @@ import cats.syntax.applicative.*
 import cats.syntax.apply.*
 import cats.effect.IO
 import cats.effect.IOApp
+import cats.effect.Clock
 import exercises.common.{ Std, given }
 import scala.util.chaining.*
 
 // exercise 06: Retirement Calculator: Challenge 1
 trait Solution02[F[_]]:
-  def exec(using s: Std[F], m: MonadError[F, Throwable]): F[Unit] =
+  import Solution01.toYear
+
+  def exec(using s: Std[F], m: MonadError[F, Throwable], c: Clock[F]): F[Unit] =
     val convert     = (s: String) => m.catchNonFatal(s.toInt)
     val ask         = (o: String) => s.ask(o.toString) >>= convert
-    val currentYear = LocalDate.now.getYear.pure
+    val currentYear = c.realTime.map(toYear)
 
     val build = (ca: Int, ra: Int, cy: Int) =>
       val ly = ra - ca
