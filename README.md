@@ -24,7 +24,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [x] 16. [Legal Driving Age](src/main/scala/exercises/ex16/Solution01.scala)([test](src/test/scala/exercises/ex16/Solution01Test.scala))
 - [x] 17. [Blood Alcohol Calculator](src/main/scala/exercises/ex17/Solution01.scala)([test](src/test/scala/exercises/ex17/Solution01Test.scala))
 - [X] 18. [Temperature Converter](src/main/scala/exercises/ex18/Solution01.scala)([test](src/test/scala/exercises/ex18/Solution01Test.scala)), ([challenge 1](src/main/scala/exercises/ex18/Solution02.scala))([test](src/test/scala/exercises/ex18/Solution02Test.scala))
-- [ ] 19. [BMI Calculator](src/main/scala/exercises/ex19/Solution01.scala)
+- [x] 19. [BMI Calculator](src/main/scala/exercises/ex19/Solution01.scala)([test](src/test/scala/exercises/ex19/Solution01Test.scala))
 - [ ] 20. [Multistate Sales Tax Calculator](src/main/scala/exercises/ex20/Solution01.scala)
 - [ ] 21. [Numbers to Names](src/main/scala/exercises/ex21/Solution01.scala)
 - [ ] 22. [Comparing Numbers](src/main/scala/exercises/ex22/Solution01.scala)
