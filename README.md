@@ -28,7 +28,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 20. [Multistate Sales Tax Calculator](src/main/scala/exercises/ex20/Solution01.scala)
 - [ ] 21. [Numbers to Names](src/main/scala/exercises/ex21/Solution01.scala)
 - [ ] 22. [Comparing Numbers](src/main/scala/exercises/ex22/Solution01.scala)
-- [ ] 23. [Troubleshooting Car Issues](src/main/scala/exercises/ex23/Solution01.scala)
+- [x] 23. [Troubleshooting Car Issues](src/main/scala/exercises/ex23/Solution01.scala)([test](src/test/scala/exercises/ex23/Solution01Test.scala))
 #### Ch 05 Functions
 - [ ] 24. [Anagram Checker](src/main/scala/exercises/ex24/Solution01.scala)
 - [ ] 25. [Password Strength Indicator](src/main/scala/exercises/ex25/Solution01.scala)

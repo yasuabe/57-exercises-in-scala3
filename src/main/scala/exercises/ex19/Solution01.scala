@@ -1,6 +1,6 @@
 package exercises.ex19
 
-import cats.MonadError
+import cats.MonadThrow
 import cats.syntax.flatMap.*
 import cats.syntax.functor.*
 import cats.syntax.applicativeError.*
@@ -11,10 +11,13 @@ import exercises.common.{ Std, given }
 // exercise 19: BMI Calculator
 trait Solution01[F[_]]:
   import Solution01.*
-  def exec(using s: Std[F], m: MonadError[F, Throwable]): F[Unit] =
+  def exec(using s: Std[F], m: MonadThrow[F]): F[Unit] =
     val ask = [T] => (prompt: String, convert: String => T) =>
-      val f = s.ask(prompt) >>= (s => m.catchNonFatal(convert(s)).attempt.map(_.toOption))
-      m.untilDefinedM(f)
+      s.ask(prompt)
+       .flatMap(s => m.catchNonFatal(convert(s))
+       .attempt
+       .map(_.toOption))
+       .untilDefinedM
 
     val inputs:F[(Double, Double)] = m.product(
       ask("Height in inches: ", _.toDouble),
