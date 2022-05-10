@@ -14,9 +14,7 @@ trait Solution01[F[_]]:
   def exec(using s: Std[F], m: MonadThrow[F]): F[Unit] =
     val ask = [T] => (prompt: String, convert: String => T) =>
       s.ask(prompt)
-       .flatMap(s => m.catchNonFatal(convert(s))
-       .attempt
-       .map(_.toOption))
+       .flatMap(s => m.catchNonFatal(convert(s)).attempt .map(_.toOption))
        .untilDefinedM
 
     val inputs:F[(Double, Double)] = m.product(
