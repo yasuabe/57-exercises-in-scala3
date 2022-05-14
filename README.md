@@ -35,7 +35,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 26. [Months to Pay Off a Credit Card](src/main/scala/exercises/ex26/Solution01.scala)
 - [x] 27. [Validating Inputs](src/main/scala/exercises/ex27/Solution01.scala)([test](src/test/scala/exercises/ex27/Solution01Test.scala))
 #### Ch 06 Repetition
-- [ ] 28. [Adding Numbers](src/main/scala/exercises/ex28/Solution01.scala)
+- [x] 28. [Adding Numbers](src/main/scala/exercises/ex28/Solution01.scala)([test](src/test/scala/exercises/ex28/Solution01Test.scala))([challenge 1](src/main/scala/exercises/ex28/Solution02.scala)([test](src/test/scala/exercises/ex28/Solution02Test.scala)))
 - [ ] 29. [Handling Bad Input](src/main/scala/exercises/ex29/Solution01.scala)
 - [ ] 30. [Multiplication Table](src/main/scala/exercises/ex30/Solution01.scala)
 - [ ] 31. [Karvonen Heart Rate](src/main/scala/exercises/ex31/Solution01.scala)
