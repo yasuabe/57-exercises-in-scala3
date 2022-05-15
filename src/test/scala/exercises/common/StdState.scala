@@ -12,7 +12,7 @@ object StdState:
 
   given Std[StdState] with
     import StateT.*
-    def print(s: String): StdState[Unit] = get.flatMap(io => set(io push s))
+    def print(s: String): StdState[Unit] = get.flatMap(io => set(io push s.trim))
     def readLine: StdState[String] = get[ThrowableOr, InOut] >>= {
       _.pop.fold(throw AssertionError("no input")){
         (line, newIo) => set[ThrowableOr, InOut](newIo).as(line)
