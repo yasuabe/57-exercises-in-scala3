@@ -39,7 +39,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 29. [Handling Bad Input](src/main/scala/exercises/ex29/Solution01.scala)
 - [ ] 30. [Multiplication Table](src/main/scala/exercises/ex30/Solution01.scala)
 - [ ] 31. [Karvonen Heart Rate](src/main/scala/exercises/ex31/Solution01.scala)
-- [ ] 32. [Guess the Number Game](src/main/scala/exercises/ex32/Solution01.scala)
+- [x] 32. [Guess the Number Game](src/main/scala/exercises/ex32/Solution01.scala)([test](src/test/scala/exercises/ex32/Solution01Test.scala))
 #### Ch 7.Data Structures
 - [ ] 33. [Magic 8 Ball](src/main/scala/exercises/ex33/Solution01.scala)
 - [ ] 34. [Employee List Removal](src/main/scala/exercises/ex34/Solution01.scala)
