@@ -56,3 +56,21 @@ class Solution01Test extends FunSuite:
       "Play again?",
       "Goodbye!"))
   }
+  test("play another scenario and replay once") {
+    // ARRANGE / ACT
+    val Right((in, out)) = act("2", 42, "42", "y", "3", 999, "999", "n")
+
+    //ASSERT
+    assert(in.isEmpty, in.toString)
+    assertEquals(out, List(
+      "Let's play Guess the Number.",
+      "Pick a difficulty level (1, 2, or 3):",
+      "I have my number. What's your guess?",
+      "You got it in 1 guesses!",
+      "Play again?",
+      "Pick a difficulty level (1, 2, or 3):",
+      "I have my number. What's your guess?",
+      "You got it in 1 guesses!",
+      "Play again?",
+      "Goodbye!"))
+  }
