@@ -41,14 +41,14 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 31. [Karvonen Heart Rate](src/main/scala/exercises/ex31/Solution01.scala)
 - [x] 32. [Guess the Number Game](src/main/scala/exercises/ex32/Solution01.scala)([test](src/test/scala/exercises/ex32/Solution01Test.scala))
 #### Ch 7.Data Structures
-- [ ] 33. [Magic 8 Ball](src/main/scala/exercises/ex33/Solution01.scala)
+- [x] 33. [Magic 8 Ball](src/main/scala/exercises/ex33/Solution01.scala)([test](src/test/scala/exercises/ex33/Solution01Test.scala))
 - [ ] 34. [Employee List Removal](src/main/scala/exercises/ex34/Solution01.scala)
 - [ ] 35. [Picking a Winner](src/main/scala/exercises/ex35/Solution01.scala)
 - [ ] 36. [Computing Statistics](src/main/scala/exercises/ex36/Solution01.scala)
 - [ ] 37. [Password Generator](src/main/scala/exercises/ex37/Solution01.scala)
 - [ ] 38. [Filtering Values](src/main/scala/exercises/ex38/Solution01.scala)
 - [ ] 39. [Sorting Records](src/main/scala/exercises/ex39/Solution01.scala)
-- [ ] 40. [Filtering Records](src/main/scala/exercises/ex40/Solution01.scala)
+- [x] 40. [Filtering Records](src/main/scala/exercises/ex40/Solution01.scala)([test](src/test/scala/exercises/ex40/Solution01Test.scala))
 #### Ch 8.Working with Files
 - [ ] 41. [Name Sorter](src/main/scala/exercises/ex41/Solution01.scala)
 - [ ] 42. [Parsing a Data File](src/main/scala/exercises/ex42/Solution01.scala)

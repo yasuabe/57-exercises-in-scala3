@@ -1,6 +1,5 @@
 package exercises.ex33
 
-// import scala.util.Try
 import cats.MonadThrow
 import cats.syntax.flatMap.*
 import cats.syntax.functor.*
