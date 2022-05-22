@@ -13,6 +13,8 @@ lazy val root = project
       "org.typelevel"     %% "cats-effect"      % "3.3.11",
       "org.typelevel"     %% "cats-free"        % "2.7.0",
       "eu.timepit"        %% "refined"          % "0.9.29",
+      "co.fs2"            %% "fs2-core"         % "3.2.7",
+      "co.fs2"            %% "fs2-io"           % "3.2.7",
       "org.scalameta"     %% "munit"            % "0.7.29" % Test,
       "org.scalacheck"    %% "scalacheck"       % "1.16.0" % Test,
       "org.scalameta"     %% "munit-scalacheck" % "0.7.29" % Test,

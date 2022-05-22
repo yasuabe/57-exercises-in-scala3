@@ -50,7 +50,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 39. [Sorting Records](src/main/scala/exercises/ex39/Solution01.scala)
 - [x] 40. [Filtering Records](src/main/scala/exercises/ex40/Solution01.scala)([test](src/test/scala/exercises/ex40/Solution01Test.scala))
 #### Ch 8.Working with Files
-- [ ] 41. [Name Sorter](src/main/scala/exercises/ex41/Solution01.scala)
+- [x] 41. [Name Sorter](src/main/scala/exercises/ex41/Solution01.scala)([test](src/test/scala/exercises/ex41/Solution01Test.scala))
 - [ ] 42. [Parsing a Data File](src/main/scala/exercises/ex42/Solution01.scala)
 - [ ] 43. [Website Generator](src/main/scala/exercises/ex43/Solution01.scala)
 - [ ] 44. [Product Search](src/main/scala/exercises/ex44/Solution01.scala)
