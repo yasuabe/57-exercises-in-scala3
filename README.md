@@ -57,7 +57,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 45. [Word Finder](src/main/scala/exercises/ex45/Solution01.scala)
 - [x] 46. [Word Frequency Finder](src/main/scala/exercises/ex46/Solution01.scala)([test](src/test/scala/exercises/ex46/Solution01Test.scala))
 #### Ch 9.Working with External Services
-- [ ] 47. [Who’s in Space?](src/main/scala/exercises/ex47/Solution01.scala)
+- [x] 47. [Who’s in Space?](src/main/scala/exercises/ex47/Solution01.scala)([test](src/test/scala/exercises/ex47/Solution01Test.scala))
 - [ ] 48. [Grabbing the Weather](src/main/scala/exercises/ex48/Solution01.scala)
 - [ ] 49. [Flickr Photo Search](src/main/scala/exercises/ex49/Solution01.scala)
 - [ ] 50. [Movie Recommendations](src/main/scala/exercises/ex50/Solution01.scala)
