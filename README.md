@@ -62,7 +62,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 49. [Flickr Photo Search](src/main/scala/exercises/ex49/Solution01.scala)
 - [ ] 50. [Movie Recommendations](src/main/scala/exercises/ex50/Solution01.scala)
 - [ ] 51. [Pushing Notes to Firebase](src/main/scala/exercises/ex51/Solution01.scala)
-- [ ] 52. [Creating Your Own Time Service](src/main/scala/exercises/ex52/Solution01.scala)
+- [x] 52. [Creating Your Own Time Service](src/main/scala/exercises/ex52/Solution01.scala)([test](src/test/scala/exercises/ex52/Solution01Test.scala))
 #### Ch 10.Full Programs
 - [ ] 53. [Todo List](src/main/scala/exercises/ex53/Solution01.scala)
 - [ ] 54. [URL Shortener](src/main/scala/exercises/ex54/Solution01.scala)

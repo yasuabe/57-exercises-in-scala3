@@ -1,5 +1,7 @@
 val scala3Version = "3.1.2"
 
+val http4sVersion = "0.23.12"
+
 lazy val root = project
   .in(file("."))
   .settings(
@@ -7,6 +9,7 @@ lazy val root = project
     version := "0.1.0-SNAPSHOT",
 
     scalaVersion := scala3Version,
+    resolvers += Resolver.sonatypeRepo("snapshots"),
     libraryDependencies ++= List(
       "org.typelevel"     %% "cats-core"           % "2.6.1",
       "org.typelevel"     %% "cats-effect"         % "3.3.11",
@@ -14,7 +17,10 @@ lazy val root = project
       "eu.timepit"        %% "refined"             % "0.9.29",
       "co.fs2"            %% "fs2-core"            % "3.2.7",
       "co.fs2"            %% "fs2-io"              % "3.2.7",
-      "org.http4s"        %% "http4s-ember-client" % "0.23.12",
+      "org.http4s"        %% "http4s-dsl"          % http4sVersion,
+      "org.http4s"        %% "http4s-circe"        % http4sVersion,
+      "org.http4s"        %% "http4s-ember-client" % http4sVersion,
+      "org.http4s"        %% "http4s-ember-server" % http4sVersion,
       "io.circe"          %% "circe-core"          % "0.15.0-M1",
       "io.circe"          %% "circe-parser"        % "0.15.0-M1",
       "io.circe"          %% "circe-generic"       % "0.15.0-M1",
