@@ -64,7 +64,7 @@ My Solutions of "Exercises for Programmers" in Scala 3
 - [ ] 51. [Pushing Notes to Firebase](src/main/scala/exercises/ex51/Solution01.scala)
 - [x] 52. [Creating Your Own Time Service](src/main/scala/exercises/ex52/Solution01.scala)([test](src/test/scala/exercises/ex52/Solution01Test.scala))
 #### Ch 10.Full Programs
-- [ ] 53. [Todo List](src/main/scala/exercises/ex53/Solution01.scala)
+- [x] 53. [Todo List](src/main/scala/exercises/ex53/Solution01.scala)([test](src/test/scala/exercises/ex53/Solution01Test.scala))
 - [ ] 54. [URL Shortener](src/main/scala/exercises/ex54/Solution01.scala)
 - [ ] 55. [Text Sharing](src/main/scala/exercises/ex55/Solution01.scala)
 - [ ] 56. [Tracking Inventory](src/main/scala/exercises/ex56/Solution01.scala)
